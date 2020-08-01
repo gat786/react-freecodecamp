@@ -16,10 +16,22 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
+import JokeComponent from "./JokeComponent"
+
 function App() {
   return (
     <div className="App">
-      
+      <JokeComponent
+      punchline="No why?"/>
+      <JokeComponent 
+      question="Have you seen the Joker that kidnaps Intelligent kids" 
+      punchline="No why?"/>
+      <JokeComponent 
+      question="Have you seen the Joker that kidnaps Intelligent kids" 
+      punchline="No why?"/>
+      <JokeComponent 
+      question="Have you seen the Joker that kidnaps Intelligent kids" 
+      punchline="No why?"/>
     </div>
   );
 }

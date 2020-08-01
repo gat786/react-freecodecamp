@@ -16,9 +16,24 @@ import React from "react";
 
 export default function JokeComponent(props){
     console.log(props);
-    return (
-        <div>
-
-        </div>
-    );
+    if(props.question){
+        return (
+            <div className="card" style={{width:"18rem",
+                margin:"1rem",
+                padding:"1rem"}
+            }>
+                <h4>Question: {props.question}</h4>
+                <h5>{props.punchline}</h5>
+            </div>
+        );
+    }else{
+        return (
+            <div className="card" style={{width:"18rem",
+                margin:"1rem",
+                padding:"1rem"}
+            }>
+                <h5>{props.punchline}</h5>
+            </div>
+        );
+    }
 }
