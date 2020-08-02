@@ -16,14 +16,14 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import "./ReactComponents/Person"
-import Person from './ReactComponents/Person';
+import CounterApp from "./ReactComponents/CounterApp"
+
 
 class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <Person />
+        <CounterApp/>
       </div>
     );
   }
