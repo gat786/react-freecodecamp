@@ -1,29 +1,31 @@
 const todoList = {
     tasks:[
         {
-            "id" : 01,
+            "id" : 1,
             "task" : "Take out trash",
             "done" : false,
         },
         {
-            "id" : 02,
+            "id" : 2,
             "task" : "Study Physics",
             "done" : false,
         },
         {
-            "id" : 03,
+            "id" : 3,
             "task" : "Learn An Algorithm",
             "done" : false,
         },
         {
-            "id" : 04,
+            "id" : 4,
             "task" : "Record the new session",
             "done" : false,
         },
         {
-            "id" : 05,
+            "id" : 5,
             "task" : "Talk to Dawuda",
             "done" : false,
         }
     ]
 }
+
+export default todoList

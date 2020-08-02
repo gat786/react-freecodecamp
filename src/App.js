@@ -16,16 +16,13 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-
-import LoginCard from "./ReactComponents/LoginCard"
+import ToDoComponent from "./ReactComponents/ToDoComponent"
 
 class App extends React.Component{
   render(){
     return (
       <div className="App">
-
-        <LoginCard />
-
+        <ToDoComponent/>
       </div>
     );
   }
