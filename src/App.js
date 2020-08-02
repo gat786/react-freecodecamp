@@ -16,9 +16,8 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import JokeComponent from "./JokeComponent"
-import Person from "./Person_RC"
-import LoginCard from "./LoginCard_RC"
+
+import LoginCard from "./ReactComponents/LoginCard"
 
 class App extends React.Component{
   render(){
@@ -26,7 +25,7 @@ class App extends React.Component{
       <div className="App">
 
         <LoginCard />
-        
+
       </div>
     );
   }
