@@ -8,16 +8,26 @@ export default class ToDoComponent extends React.Component{
         this.state = {
             todoitems : todoList.tasks
         }
+        this.handleCheck = this.handleCheck.bind(this)
+    }
+    
+    handleCheck(id){
+        todoList.tasks.forEach(element => {
+            if(element.id === id){
+                element.done = !element.done
+            }
+        });
+        this.setState({
+            todoitems : todoList.tasks
+        })
     }
 
     render(){
         let ToDoItems = this.state.todoitems.map(item=>{
             return (
                 <div key={item.id}>
-                    <input type="checkbox" checked={item.done} onChange={(value)=>{
-                        item.done = value
-                    }} />
-                    <label>{item.task}</label>
+                    <input id="checkbox" className="input checkbox" type="checkbox" checked={item.done} onChange={()=> this.handleCheck(item.id)} />
+                    <label for="checkbox">{item.task}</label>
                 </div>
             );
         })
