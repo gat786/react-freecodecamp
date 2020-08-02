@@ -16,13 +16,14 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import ToDoComponent from "./ReactComponents/ToDoComponent"
+import "./ReactComponents/Person"
+import Person from './ReactComponents/Person';
 
 class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <ToDoComponent/>
+        <Person />
       </div>
     );
   }
