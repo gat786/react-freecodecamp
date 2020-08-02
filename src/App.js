@@ -18,14 +18,15 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import JokeComponent from "./JokeComponent"
 import Person from "./Person_RC"
+import LoginCard from "./LoginCard_RC"
 
 class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <JokeComponent
-        punchline="No why?"/>
-        <Person />
+
+        <LoginCard />
+        
       </div>
     );
   }

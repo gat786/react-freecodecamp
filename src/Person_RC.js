@@ -10,19 +10,9 @@ class Person extends React.Component{
     }
 
     increaseAge(){
-        this.setState(
-            this.state = {
-                age : this.state.age + 1
-            }
-        )
     }
 
     decreaseAge(){
-        this.setState(
-            this.state = {
-                age : this.state.age - 1
-            }
-        )
     }
 
 
