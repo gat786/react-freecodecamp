@@ -16,14 +16,13 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import ToDoComponent from "./ReactComponents/ToDoComponent"
-
+import ProfileState from "./ReactComponents/ProfileState"
 
 class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <ToDoComponent />
+        <ProfileState/>
       </div>
     );
   }
