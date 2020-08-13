@@ -14,6 +14,7 @@ export default class ToDoComponent extends React.Component{
     handleCheck(id){
         todoList.tasks.forEach(element => {
             if(element.id === id){
+                console.log(`${element.id}`)
                 element.done = !element.done
             }
         });
@@ -26,15 +27,36 @@ export default class ToDoComponent extends React.Component{
         let ToDoItems = this.state.todoitems.map(item=>{
             return (
                 <div key={item.id}>
-                    <input id="checkbox" className="input checkbox" type="checkbox" checked={item.done} onChange={()=> this.handleCheck(item.id)} />
-                    <label for="checkbox">{item.task}</label>
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" 
+                            id={item.id}
+                            checked={item.done} 
+                            onChange={
+                                ()=> { 
+                                    this.handleCheck(item.id) 
+                                }
+                            } 
+                            className="custom-control-input" 
+                            id="defaultUnchecked" />
+                        <label className="custom-control-label"
+                         htmlFor={item.id}> {item.task} </label>
+                    </div>
                 </div>
             );
         })
         
         return (
             <div id="ToDoComponent">
-                {ToDoItems}
+                <div className="card">
+                    <div className="card-body">
+                        <div className="card-title">
+                            <h4>ToDo App</h4>
+                        </div>
+                        <div className="card-text">
+                            {ToDoItems}
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

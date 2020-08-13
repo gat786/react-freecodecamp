@@ -16,13 +16,14 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import ProfileState from "./ReactComponents/ProfileState"
+import InputComponent from "./ReactComponents/InputComponent"
 
 class App extends React.Component{
+
   render(){
     return (
       <div className="App">
-        <ProfileState/>
+        <InputComponent />
       </div>
     );
   }
