@@ -16,14 +16,14 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.css"
 
-import InputComponent from "./ReactComponents/InputComponent"
+import TravelForm from "./ReactComponents/TravelForm"
 
 class App extends React.Component{
 
   render(){
     return (
       <div className="App">
-        <InputComponent />
+        <TravelForm />
       </div>
     );
   }
